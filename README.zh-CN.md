@@ -110,19 +110,6 @@ cp -R project-interview-coach ~/.codex/skills/
 
 提供的材料越完整，回答就越具体、可信。Skill 不会用看似合理但未经验证的信息填补关键事实；当缺失信息会显著影响答案时，它会向你确认。
 
-## 项目结构
-
-```text
-.
-├── README.md
-├── README.zh-CN.md
-├── assets/                   # README 效果示例图片
-└── project-interview-coach/
-    ├── SKILL.md              # Skill 的核心工作流程与回答规范
-    └── agents/
-        └── openai.yaml       # Skill 的展示名称、简介和默认提示词
-```
-
 ## 更新
 
 进入本地仓库并拉取最新版本，然后重新复制 Skill：

@@ -111,19 +111,6 @@ evaluation methodology, and limitations.
 
 The more complete your materials are, the more specific and credible the answers will be. The Skill does not fill critical gaps with plausible but unverified claims; it asks for clarification when missing information would materially change the answer.
 
-## Project Structure
-
-```text
-.
-├── README.md
-├── README.zh-CN.md
-├── assets/                   # README preview images
-└── project-interview-coach/
-    ├── SKILL.md              # Core workflow and answer guidelines
-    └── agents/
-        └── openai.yaml       # Display name, description, and default prompt
-```
-
 ## Updating
 
 Enter your local repository, pull the latest changes, and copy the Skill again:
