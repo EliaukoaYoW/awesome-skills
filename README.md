@@ -28,7 +28,7 @@ No terminal or Bash knowledge is required. Open Codex, start a task, and paste t
 
 ```text
 Use $skill-installer to install the project-interview-coach Skill from this GitHub repository:
-https://github.com/EliaukoaYoW/project-interview-coach
+https://github.com/EliaukoaYoW/awesome-skills
 
 The Skill is located in the project-interview-coach subdirectory. After installing it,
 confirm the installation location and tell me how to use it.
@@ -47,8 +47,8 @@ If Codex reports that a Skill with the same name already exists, ask it to check
 Clone the repository and copy the Skill into your personal Codex Skills directory:
 
 ```bash
-git clone https://github.com/EliaukoaYoW/project-interview-coach.git
-cd project-interview-coach
+git clone https://github.com/EliaukoaYoW/awesome-skills.git
+cd awesome-skills
 mkdir -p ~/.codex/skills
 cp -R project-interview-coach ~/.codex/skills/
 ```

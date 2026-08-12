@@ -28,7 +28,7 @@
 
 ```text
 使用 $skill-installer，从下面的 GitHub 仓库安装 project-interview-coach Skill：
-https://github.com/EliaukoaYoW/project-interview-coach
+https://github.com/EliaukoaYoW/awesome-skills
 
 Skill 位于仓库的 project-interview-coach 子目录中。安装完成后，
 请确认安装位置，并告诉我如何使用它。
@@ -47,8 +47,8 @@ Codex 会自动下载仓库并安装 Skill。如果 Codex 请求网络访问权�
 克隆仓库，并将 Skill 复制到 Codex 的个人 Skills 目录：
 
 ```bash
-git clone https://github.com/EliaukoaYoW/project-interview-coach.git
-cd project-interview-coach
+git clone https://github.com/EliaukoaYoW/awesome-skills.git
+cd awesome-skills
 mkdir -p ~/.codex/skills
 cp -R project-interview-coach ~/.codex/skills/
 ```
