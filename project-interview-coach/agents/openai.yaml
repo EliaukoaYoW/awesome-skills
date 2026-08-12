@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Interview Coach"
+  short_description: "Turn project facts into strong interview answers"
+  default_prompt: "Use $project-interview-coach to help me answer interview questions about my project clearly and convincingly."
