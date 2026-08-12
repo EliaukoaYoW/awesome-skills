@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="930" viewBox="0 0 1120 930" role="img" aria-labelledby="title desc">
+  <title id="title">Project Interview Coach example</title>
+  <desc id="desc">A project interview question and a polished answer displayed in a macOS-style terminal window.</desc>
+  <rect width="1120" height="930" rx="16" fill="#1f2430"/>
+  <path d="M16 0h1088a16 16 0 0 1 16 16v44H0V16A16 16 0 0 1 16 0Z" fill="#f2f2f2"/>
+  <circle cx="28" cy="30" r="9" fill="#ff5f57"/>
+  <circle cx="58" cy="30" r="9" fill="#febc2e"/>
+  <circle cx="88" cy="30" r="9" fill="#28c840"/>
+  <text x="560" y="37" text-anchor="middle" fill="#555b66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="600">Project Interview Coach — Example</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="17" fill="#e6e8ee">
+    <text x="28" y="96" fill="#74c7ec" font-weight="700">USER</text>
+    <text x="28" y="126">How are relevant memories retrieved, and how does the system decide what to</text>
+    <text x="28" y="152">include in the current turn?</text>
+
+    <text x="28" y="202" fill="#a6e3a1" font-weight="700">PROJECT INTERVIEW COACH</text>
+    <text x="28" y="232">We did not use embedding-based vector retrieval. Instead, we built a</text>
+    <text x="28" y="258">lightweight, transparent, and auditable rule-based retrieval mechanism. It</text>
+    <text x="28" y="284">has two stages: first, selecting candidate memories; and second, ranking them</text>
+    <text x="28" y="310">by priority.</text>
+
+    <text x="28" y="354">The first stage is candidate selection. When a user request arrives, the</text>
+    <text x="28" y="380">system checks both the Episodic Memory from the current conversation and the</text>
+    <text x="28" y="406">accumulated Durable Memory. It first removes memories that have expired or</text>
+    <text x="28" y="432">have been superseded by newer facts.</text>
+
+    <text x="28" y="476">It then checks whether each memory has a basic relationship with the current</text>
+    <text x="28" y="502">request. A memory enters the candidate set only when its tags exactly match</text>
+    <text x="28" y="528">the request tags, or when the request shares keywords with the memory content.</text>
+    <text x="28" y="554">File-scoped memories are also checked against the files involved.</text>
+
+    <text x="28" y="598">The second stage ranks candidates by scope fit, semantic relevance, and</text>
+    <text x="28" y="624">recency. Specifically, the system considers:</text>
+
+    <text x="44" y="662">1. Scope match: file, then session, then project.</text>
+    <text x="44" y="690">2. Exact tag matches.</text>
+    <text x="44" y="718">3. Memory type: constraint, decision, or error_resolution.</text>
+    <text x="44" y="746">4. Keyword overlap between the request and memory content.</text>
+    <text x="44" y="774">5. Recency when the other signals are similar.</text>
+
+    <text x="28" y="818">Finally, the system selects at most the top three memories as Relevant Memory</text>
+    <text x="28" y="844">and includes their types and scopes in the prompt. The model sees not only</text>
+    <text x="28" y="870">what was remembered, but also what kind of information it is and where it</text>
+    <text x="28" y="896">applies.</text>
+  </g>
+</svg>

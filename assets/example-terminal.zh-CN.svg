@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="850" viewBox="0 0 1120 850" role="img" aria-labelledby="title desc">
+  <title id="title">Project Interview Coach 效果示例</title>
+  <desc id="desc">在 macOS 风格终端窗口中展示的项目面试问题和回答。</desc>
+  <rect width="1120" height="850" rx="16" fill="#1f2430"/>
+  <path d="M16 0h1088a16 16 0 0 1 16 16v44H0V16A16 16 0 0 1 16 0Z" fill="#f2f2f2"/>
+  <circle cx="28" cy="30" r="9" fill="#ff5f57"/>
+  <circle cx="58" cy="30" r="9" fill="#febc2e"/>
+  <circle cx="88" cy="30" r="9" fill="#28c840"/>
+  <text x="560" y="37" text-anchor="middle" fill="#555b66" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif" font-size="17" font-weight="600">Project Interview Coach — 效果示例</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, 'PingFang SC', 'Microsoft YaHei', monospace" font-size="18" fill="#e6e8ee">
+    <text x="28" y="96" fill="#74c7ec" font-weight="700">USER</text>
+    <text x="28" y="128">相关记忆如何做召回？如何决定这一轮带什么？</text>
+
+    <text x="28" y="178" fill="#a6e3a1" font-weight="700">PROJECT INTERVIEW COACH</text>
+    <text x="28" y="210">我们没有采用 Embedding 向量检索，而是使用了一套轻量、透明、可复盘的</text>
+    <text x="28" y="238">规则检索机制。整体分为两步：先筛选候选记忆，再按照优先级排序。</text>
+
+    <text x="28" y="282">第一步是筛选候选记忆。收到用户请求后，系统会同时检查当前会话中的</text>
+    <text x="28" y="310">Episodic Memory，以及已经沉淀的 Durable Memory。首先排除已经失效或被</text>
+    <text x="28" y="338">新事实替代的记忆。</text>
+
+    <text x="28" y="382">然后判断记忆和当前请求是否存在基本关联：如果请求中的标签和记忆标签</text>
+    <text x="28" y="410">精确匹配，或者请求和记忆正文之间存在关键词重叠，这条记忆才会进入候选集。</text>
+    <text x="28" y="438">对于文件级记忆，还要检查它是否适用于当前请求涉及的文件。</text>
+
+    <text x="28" y="482">第二步是对候选记忆进行优先级排序。总体遵循“适用范围优先、语义相关性</text>
+    <text x="28" y="510">其次、时间新鲜度兜底”的原则，具体依次考虑：</text>
+
+    <text x="44" y="552">1. 作用域匹配程度：文件级、会话级、项目级；</text>
+    <text x="44" y="584">2. 标签是否精确命中；</text>
+    <text x="44" y="616">3. 记忆类型是否适合当前请求：constraint、decision、error_resolution；</text>
+    <text x="44" y="648">4. 请求和记忆正文之间的关键词重合程度；</text>
+    <text x="44" y="680">5. 记忆的新鲜程度。</text>
+
+    <text x="28" y="726">最终，系统最多取排名靠前的 3 条记忆作为这一轮的 Relevant Memory，并将</text>
+    <text x="28" y="754">记忆的类型和作用域一起带入 Prompt。这样模型看到的不只是“记住了什么”，</text>
+    <text x="28" y="782">还知道这条信息是什么性质、适用于什么范围。</text>
+  </g>
+</svg>
